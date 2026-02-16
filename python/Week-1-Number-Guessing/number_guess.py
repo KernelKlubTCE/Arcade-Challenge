@@ -8,6 +8,12 @@ def check_guess(secret: int, guess: int) -> str:
     :param secret: the actual number to guess
     :param guess: the user's guess
     """
+    if guess < secret:
+        return "TOO LOW"
+    elif guess > secret:
+        return "TOO HIGH"
+    else:
+        return "CORRECT"
 
 
 def calculate_score(attempts: int) -> int:
