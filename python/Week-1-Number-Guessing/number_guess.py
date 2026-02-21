@@ -8,6 +8,7 @@ def check_guess(secret: int, guess: int) -> str:
     :param secret: the actual number to guess
     :param guess: the user's guess
     """
+    print("hello world")
 
 
 def calculate_score(attempts: int) -> int:
